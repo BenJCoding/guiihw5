@@ -18,35 +18,31 @@
   </head>
   <body>
     <header>
-      <h2>Scrabble&trade;</h2>
+      <h2>Scr@bble&trade;</h2>
     </header>
     <main>
-        <div id="board-div">
-          <img src="./images/Scrabble_Board.jpg" id="board-img"></img>
-        </div>
-        
-          <div id="div-of-droppables"></div>
-    
-        <div id="holder-div">
-          <img src="./images/Holder.png" id="holder-img"></img>
-          <div id="holder-tiles"></div>
-        </div>
-
-        <div id="containment-wrapper">  </div>
-        <div id="messageBox" class="message-box">
-          <p id="messageText">Loading...</p>
+      <div id="board-div">
+        <img src="./images/Scrabble_Board.jpg" id="board-img"></img>
       </div>
-      
+      <div id="div-of-droppables"></div>
+      <div id="holder-div">
+        <img src="./images/Holder.png" id="holder-img"></img>
+        <div id="holder-tiles"></div>
+      </div>
+      <div id="containment-wrapper">  </div>
+      <div id="messageBox" class="message-box">
+        <p id="messageText">Loading...</p>
+      </div>
+      <div id="scoreBox" class="score-box">
+      </div>
+      <div id="scorediv">Score: <span id="score">0</span> points</div>
     </main>
     <div id="side-content">
-      <input type="button" id="give-tile" value="gimmie tile">
-      <input type="button" id="undo" value="undo">
-      <input type="button" id="buy-tile" value="buy tile">
-      <input type="button" id="submit" value="submit">
-
-      <!-- Add more content here -->
+      <input type="button" id="give-tile" value="Give me tile">
+      <input type="button" id="undo" value="Undo placement">
+      <input type="button" id="submit" value="Submit">
+      <input type="button" id="reset" value="New game">
     </div>
-
     <footer>
       <span>&copy; 2023 by Ben</span>
     </footer>

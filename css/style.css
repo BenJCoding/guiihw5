@@ -1,1 +1,153 @@
+/*   File: style.css
+     GUI Assignment: Scrabble Board
+     Author: Benjamin Jancsy
+     Created: June 25, 2023
+     Copyright (c)  2023 by Ben.
+     References: w3schools.com */
+body { /* body color */
+    background-color: rgb(220, 220, 195);
+    margin: auto;
+        font-family: 'Helvetica';
+}
+header {
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
 
+    text-align: center;
+}
+main {
+    margin: auto;
+    /* width: 80%; */
+    text-align: center;
+    overflow: hidden;
+}
+footer {
+    font-style: italic;
+}
+
+h2 { /* welcome message */
+    margin-top: -5px;
+    height: 15px;
+    color: rgb(118, 49, 17);
+    font-family: 'Helvetica';
+}
+
+/* img:hover {
+    transform: scale(2.5);
+} */
+#div-of-droppables {
+    width: 750px;
+    margin: 0 50px;
+    position: relative;
+}
+#board-div {
+    width: 750px;
+    margin: 0 50px;
+    overflow: hidden;
+    position: relative;
+}
+#board-img {
+    color: red;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+    border-radius: 15px;
+}
+#holder-div {
+    width: 740px;
+    margin: 5px 50px; 
+}
+#holder-img {
+    width: 400px;
+    height: 100%;
+    transition: transform 0.5s ease;
+    z-index: 1;
+
+}
+.droppable {
+    position: absolute;
+    left: 2px;
+    top: 0;
+    width: 125px;
+    height: 125px;
+    /* background: #999; */
+    color: #fff;
+    /* padding: 10px; */
+  }
+.holder-tile {
+    /* position: relative; */
+    z-index: 2;
+    left: 0px;
+    bottom:100px;
+    width: 50px;
+    position: relative;
+    padding-left:1px;
+    padding-right: 1px;
+
+}
+.board-piece {
+    position: absolute;
+    z-index: 13;
+}
+#containment-wrapper { 
+    position: absolute; 
+    top: 120px; /*MAKE THIS PERCENTAGE BASED or whatever. wp*/
+    left: 162px; 
+    width: 600px; 
+    height:630px; 
+    border:2px solid red; 
+    z-index: 0;
+}
+input {
+    background-color: transparent;
+    height: 30px;
+    border-radius: 15px;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    margin: 8px;
+    bottom: 0;
+    position: absolute;
+}
+#buy-tile {
+    left: 100px;
+}
+#undo {
+    bottom: 100px;
+}
+#submit {
+    bottom: 100px;
+    left: 100px;
+}
+#side-content {
+    position: absolute;
+    left: 810px;
+    top: 55px;
+    width: 200px;
+    height: 749px;
+    background-color: rgb(170, 170, 126);;
+    border-radius: 15px;
+
+}
+.message-box {
+    display: inline; /* Hidden by default */
+    position: absolute;
+    top: 820px;
+    left: 638px;
+    width: 370px; /* Full width */
+    height: 80px;
+    /* background-color: #fefefe;  */
+    border-radius: 15px;;
+    border: 1px solid #888;
+    padding: 0;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 20px; 
+    z-index: 55;
+    display: grid; place-items: center;
+}
+/* #messageText {
+    align-items: center;
+} */

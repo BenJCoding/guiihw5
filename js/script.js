@@ -506,7 +506,7 @@ $().ready(function() {
             $("#give-tile").prop({'disabled': true});
             undoAllow();
         }
-        $("#holder-tiles").append('<img src="../images/Scrabble_Tiles/Scrabble_Tile_' + tile + '.jpg" class="holder-tile draggable" value="' + tile + '" alt="' + tile + '"></img>');
+        $("#holder-tiles").append('<img src="images/Scrabble_Tiles/Scrabble_Tile_' + tile + '.jpg" class="holder-tile draggable" value="' + tile + '" alt="' + tile + '"></img>');
         $( ".draggable" ).draggable({
             snap: ".droppable",
             snapMode: "right",

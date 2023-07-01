@@ -7,7 +7,7 @@
 body { /* body color */
     background-color: rgb(220, 220, 195);
     margin: auto;
-        font-family: 'Helvetica';
+    font-family: 'Helvetica';
 }
 header {
     height: 50px;
@@ -32,10 +32,6 @@ h2 { /* welcome message */
     color: rgb(118, 49, 17);
     font-family: 'Helvetica';
 }
-
-/* img:hover {
-    transform: scale(2.5);
-} */
 #div-of-droppables {
     width: 750px;
     margin: 0 50px;
@@ -63,7 +59,6 @@ h2 { /* welcome message */
     height: 100%;
     transition: transform 0.5s ease;
     z-index: 1;
-
 }
 .droppable {
     position: absolute;
@@ -84,7 +79,6 @@ h2 { /* welcome message */
     position: relative;
     padding-left:1px;
     padding-right: 1px;
-
 }
 .board-piece {
     position: absolute;
@@ -96,7 +90,7 @@ h2 { /* welcome message */
     left: 162px; 
     width: 600px; 
     height:630px; 
-    border:2px solid red; 
+    /* border:2px solid red;  */
     z-index: 0;
 }
 input {
@@ -106,19 +100,20 @@ input {
     color: black;
     font-weight: bold;
     border: 2px solid black;
-    margin: 8px;
-    bottom: 0;
+    /* margin: 10px auto; */
+    width: 160px;
+    left: 20px;
+    bottom: 10px;
     position: absolute;
 }
-#buy-tile {
-    left: 100px;
-}
 #undo {
-    bottom: 100px;
+    bottom: 55px;
 }
 #submit {
     bottom: 100px;
-    left: 100px;
+}
+#reset {
+    bottom: 140px;
 }
 #side-content {
     position: absolute;
@@ -128,10 +123,9 @@ input {
     height: 749px;
     background-color: rgb(170, 170, 126);;
     border-radius: 15px;
-
 }
 .message-box {
-    display: inline; /* Hidden by default */
+    display: inline;
     position: absolute;
     top: 820px;
     left: 638px;
@@ -148,6 +142,44 @@ input {
     z-index: 55;
     display: grid; place-items: center;
 }
-/* #messageText {
-    align-items: center;
-} */
+
+.score-box {
+    display: inline;
+    position: absolute;
+    top: 100px;
+    left: 830px;
+    width: 160px;
+    height: 470px;
+    /* background-color: #fefefe;  */
+    border-radius: 15px;;
+    border: 1px solid #888;
+    padding: 0;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1em;
+    margin-bottom: 20px; 
+    z-index: 55;
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#scorediv {
+    display: inline;
+    position: absolute;
+    top: 582px;
+    left: 830px;
+    height: 30px;
+    width: 156px;
+    /* background-color: #fefefe;  */
+    border-radius: 15px;;
+    border: 1px solid #888;
+    padding: 5px;
+    padding-top:10px;
+    color: purple;
+    font-weight: 700;
+    font-size: 1.2em;
+    place-items: center;
+    z-index: 55;
+    overflow: auto;
+}

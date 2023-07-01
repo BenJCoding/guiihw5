@@ -1,0 +1,58 @@
+<!-- File: index.html
+     GUI Assignment: Scrabble Board
+     Author: Benjamin Jancsy
+     Created: June 25, 2023
+     Copyright (c)  2023 by Ben.
+     References: w3schools.com -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="./images/favicon.png" /><!-- Preview card for link share -->
+    <title>HW 5</title>
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon"><!-- custom icon -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <!-- <link href="./css/jquery-ui.css" rel="stylesheet"> this is the vader ui theme-->
+  </head>
+  <body>
+    <header>
+      <h2>Scrabble&trade;</h2>
+    </header>
+    <main>
+        <div id="board-div">
+          <img src="./images/Scrabble_Board.jpg" id="board-img"></img>
+        </div>
+        
+          <div id="div-of-droppables"></div>
+    
+        <div id="holder-div">
+          <img src="./images/Holder.png" id="holder-img"></img>
+          <div id="holder-tiles"></div>
+        </div>
+
+        <div id="containment-wrapper">  </div>
+        <div id="messageBox" class="message-box">
+          <p id="messageText">Loading...</p>
+      </div>
+      
+    </main>
+    <div id="side-content">
+      <input type="button" id="give-tile" value="gimmie tile">
+      <input type="button" id="undo" value="undo">
+      <input type="button" id="buy-tile" value="buy tile">
+      <input type="button" id="submit" value="submit">
+
+      <!-- Add more content here -->
+    </div>
+
+    <footer>
+      <span>&copy; 2023 by Ben</span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
